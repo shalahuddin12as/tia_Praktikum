@@ -7,8 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.ahmad_project_3tia.databinding.ActivityLoginBinding
 import com.example.ahmad_project_3tia.databinding.ActivityMainBinding
+import com.example.ahmad_project_3tia.pertemuan5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -55,6 +55,11 @@ class MainActivity : AppCompatActivity() {
                 }
                 .setCancelable(false)
                 .show()
+        }
+        binding.btntolima.setOnClickListener {
+            val intent = Intent(this, LimaActivity::class.java)
+
+            startActivity(intent)
         }
     }
 }
