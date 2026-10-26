@@ -12,10 +12,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ahmad_project_3tia.LoginActivity
 import com.example.ahmad_project_3tia.MainActivity
-import com.example.ahmad_project_3tia.R
 import com.example.ahmad_project_3tia.databinding.FragmentHomeBinding
-import com.example.ahmad_project_3tia.pertemuan5.LimaActivity
-import com.example.ahmad_project_3tia.pertemuan6.EnamActivity
+import com.example.ahmad_project_3tia.Home.pertemuan5.LimaActivity
+import com.example.ahmad_project_3tia.Home.pertemuan6.EnamActivity
+import com.example.ahmad_project_3tia.Home.pertemuan9.NinthActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -80,6 +80,11 @@ class HomeFragment : Fragment() {
         }
         binding.btntoEnam.setOnClickListener {
             val intent = Intent(requireContext(), EnamActivity::class.java)
+
+            startActivity(intent)
+        }
+        binding.btntoNinth.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
 
             startActivity(intent)
         }
