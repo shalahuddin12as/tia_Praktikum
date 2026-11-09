@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("androidx.gridlayout:gridlayout:1.0.0") // Tahap 4: GridLayout
     implementation("androidx.viewpager2:viewpager2:1.1.0") // Tahap 5: ViewPager2

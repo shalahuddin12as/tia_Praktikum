@@ -138,6 +138,14 @@
             app:layout_columnWeight="1"
             app:layout_gravity="fill_horizontal" />
 
+        <Button
+            android:id="@+id/btntoTent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 10"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
     </androidx.gridlayout.widget.GridLayout>
 
     <Button
